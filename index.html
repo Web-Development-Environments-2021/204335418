@@ -2,19 +2,24 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="icon" href="src/icon.ico">
+
     <title>Rick Sanchez</title>
   </head>
   <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0" nonce="OrayJuWk"></script>
   <body>
     <div id="menu">
+      <img class="menuIcon" src="src/rick.png" height:40px>
       <a class="menuItem" href="#about">About Me</a> |
       <a class="menuItem" href="#photos">My Photos</a> |
       <a class="menuItem" href="#playlist">My Playlist</a> |
       <a class="menuItem" href="#like">Like</a> |
       <a class="menuItem" href="#qrcoder">QR code</a> |
       <a class="menuItem" href="#qa">Q&A</a> |
-      <a class="menuItem" href="#contact">Contact Me</a> |
+      <a class="menuItem" href="#contact">Contact Me</a>
+      <img class="menuIcon" src="src/morty.png" height:40px>
+
     </div>
           
     <section id="about" class="section" style="padding-top: 40px;">
@@ -83,16 +88,21 @@
 
     <section id="qa" class="section">
       <br/>
+      <p class="heading">Q&A</p>
       <div class="qa">
-        <p class="heading">Q&A</p>
         <h3>What are the main differences between Web 1,2 and 3?</h3>
-          <br>
-          <h5>1) Lorem ipsum...</h5>
-          <br>
-          <h5>2) Lorem ipsum...</h5>
-          <br>
-          <h5>3) Lorem ipsum...</h5>
-          <br>
+          <h4>Web 1.0</h5>
+          <p>A limited interaction with the user. 
+            Mostly used in reading sites with no option to add or post new data from the user.
+          </p>
+          <h4>Web 2.0</h5>
+          <p>More options are added and the interaction is greater, allowing users to post their share their own information
+            and share it with others easily. 
+          </p>
+          <h4>Web 3.0</h5>
+          <p>Websites and the systems behind them become more intelligent, and able to interpert information like humans.
+            The computers adapt themselves to the user's personal perferences.
+          </p>
         <h4>Examples: </h4>
       </div>
       <br/>
@@ -102,8 +112,21 @@
 
     <section id="contact" class="section">
       <br/>
-      <br/>
       <p class="heading">Contact Me</p>
+      <form action="mailto:odedberk@pos.bgu.ac.il" method="post" enctype="text/plain">
+        <br/>
+        Your name<br>
+        <input type="text" name= "Name is"><br>
+        E-mail address<br>
+        <input type="text" name="If you want to reply, use this address"><br>
+        You wanted to say that...<br>
+        <textarea type="text" name="They say" rows="4" cols="40" maxlength="500"></textarea>
+        <br><br>
+        <input type="submit" value="Send">
+        <input type="reset" value="Reset">
+        <br/>
+        <br/>
+      </form>
       <br/>
       <br/>
       <br/>
