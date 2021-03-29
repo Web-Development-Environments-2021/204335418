@@ -2,8 +2,10 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <title>Page Title</title>
+    <title>Rick Sanchez</title>
   </head>
+  <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0" nonce="OrayJuWk"></script>
   <body>
     <div id="menu">
       <a class="menuItem" href="#about">About Me</a> |
@@ -18,7 +20,7 @@
     <section id="about" class="section" style="padding-top: 40px;">
       <!-- <p class="heading">About Me</p> -->
       <div class="clip-text">
-        ABOUT ME
+        WHO AM I
       </div>
       <br/>
       <br/>
@@ -29,64 +31,30 @@
     </section>
 
     <section id="photos" class="section">
+      <br>
+      <br>
+      <br>
       <p class="heading">My Photos</p> 
-
       <br/>
-      <table class="container">
-        <tr>
-          <td >
-            <!-- <div class="card-holder"> -->
-                <img class = "picture" src="https://ih1.redbubble.net/image.742120081.1676/flat,1000x1000,075,f.u1.jpg" 
-                  height="150px" 
-                  width="150px">
-              </div>
-            <!-- </div> -->
-          </td>
-          <td >
-              <img class = "picture" src="https://ih1.redbubble.net/image.742120081.1676/flat,1000x1000,075,f.u1.jpg" 
-                height="150px" 
-                width="150px">
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td >
-            <!-- <div class="card-holder"> -->
-                <img class = "picture" src="https://ih1.redbubble.net/image.742120081.1676/flat,1000x1000,075,f.u1.jpg" 
-                  height="150px" 
-                  width="150px">
-              </div>
-            <!-- </div> -->
-          </td>
-          <td >
-            <!-- <div class="card-holder"> -->
-                <img class = "picture" src="https://ih1.redbubble.net/image.742120081.1676/flat,1000x1000,075,f.u1.jpg" 
-                  height="150px" 
-                  width="150px">
-              </div>
-            <!-- </div> -->
-          </td>
-        </tr>
-      </table>
       <div class="row"> 
-        <div class="column">
-          <img src="https://ih1.redbubble.net/image.742120081.1676/flat,1000x1000,075,f.u1.jpg" style="width:45%">
-          <img src="https://ih1.redbubble.net/image.742120081.1676/flat,1000x1000,075,f.u1.jpg" style="width:45%">
-          <img src="https://ih1.redbubble.net/image.742120081.1676/flat,1000x1000,075,f.u1.jpg" style="width:45%">
-          <!-- <img src="https://ih1.redbubble.net/image.742120081.1676/flat,1000x1000,075,f.u1.jpg" style="width:45%"> -->
+        <div class="column ">
+          <img class="pic" src=src/baby.png style="width:75%">
+          <img class="pic" src=src/trip.jpg style="width:100%">
         </div>
         <div class="column">
-          <img src="https://ih1.redbubble.net/image.742120081.1676/flat,1000x1000,075,f.u1.jpg" style="width:45%">
-          <img src="https://ih1.redbubble.net/image.742120081.1676/flat,1000x1000,075,f.u1.jpg" style="width:45%">
-          <img src="https://ih1.redbubble.net/image.742120081.1676/flat,1000x1000,075,f.u1.jpg" style="width:45%">
-          <img src="https://ih1.redbubble.net/image.742120081.1676/flat,1000x1000,075,f.u1.jpg" style="width:45%">
-          <img src="https://ih1.redbubble.net/image.742120081.1676/flat,1000x1000,075,f.u1.jpg" style="width:45%">
-        </div>
+          <img class="pic" src=src/family.jpeg style="width:100%">
+          <img class="pic" src=src/kids.jpg style="width:48%">
+          <img class="pic" src=src/army.jpg style="width:48%">
+          <img class="pic" src=src/laugh.gif style="width:100%">
+        </div> 
+        <div class="column ">
+          <img class="pic" src=src/morty.jpg style="width:100%">
+          <img class="pic" src=src/car.png style="width:100%">
+          <img class="pic" src=src/sofa.png style="width:48%">
+          <img class="pic" src=src/sing.jpg style="width:48%">
+        </div> 
+        
       </div>
-     
-      <br/>
-      <br/>
-      <br/>
       <br/>
     </section>
 
@@ -102,11 +70,9 @@
     </section>
 
     <section id="qrcoder" class="section">
-      <br/>    <br/>
-      <br/>
-      <br/>
       <p class="heading">Scan My Code</p>
-      <br/>
+      <br>
+      <img class="qr" src="src/qrCode.jpg"/>
     </section>
 
     <section id="qa" class="section">
@@ -142,7 +108,15 @@
     <section id="like" class="section">
       <br/>
       <p class="heading">Please like me!</p>
+      <div class="fb">
+        <div class="fb-like" data-href="https://www.facebook.com/RickandMorty/" 
+      data-width="" data-layout="button_count" data-action="like" data-size="large" data-share="true"></div>
+      </div>
+      
       <br/>
+      <br/>
+      <br/>
+
     </section>
 
 

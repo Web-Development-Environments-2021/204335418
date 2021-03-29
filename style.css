@@ -10,25 +10,70 @@
 	color: rgb(187, 234, 250);
     background-color: #333;
 	box-shadow: 0 2px 15px 2px black;
+	opacity: 0.85;
+
 
 }
 
+.menuItem{
+	padding: 0px 7px 0px 7px;
+	color: #f2f2f2;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: 600;
+	
+}
+
+.menuItem:hover
+{
+	color: #9900ff;
+	font-size:24px;
+	text-shadow: 0px 0px 10px white;
+}
+
 html{
-	/* background-image: linear-gradient(to right, #55459c, #a8c0ff);  */
+	/* background-image: linear-gradient(to right, #55459c, #b7e4f9ff,#55459c);  */
+	background-image: linear-gradient(to right,#b7e4f9ff, #e7e0db); 
+
 	/* background: linear-gradient(to right, #2980b9, #8ddaf7, #c0f8ff);   */
-	background: linear-gradient(to right, #ffe259, #ffb770);
+	/* background: linear-gradient(to right,  #ffc374, #ffe259, #f3c97c); */
 	height: 100%;
 }
 
 .heading
 {
 	color: white;
-	background-color: rgb(68, 68, 68);
+	/* background-color: rgb(68, 68, 68); */
+	background: linear-gradient(to bottom, #333,rgb(33, 56, 66));
 	text-align: center;
 	height: 35px;
 	font-size: 20px;
+	font-weight: bold;
 	box-shadow: 4px 2px 6px 0px black;
 	margin: 10px 20px 10px 20px;
+
+}
+
+.picHeader
+{
+	background: url(src/smoke.gif);
+	background-size: cover;
+	background-position: center;
+	-webkit-background-clip: border-box;
+	color: transparent;
+	height: 35px;
+	box-sizing: border-box;
+	/* margin: 50px 20px 10px 50px; */
+	width: 400px;
+	margin: auto;
+	box-shadow: 4px 2px 6px 0px black;
+
+	color: white;
+	text-align: center;
+	-webkit-text-stroke: 1px rgb(32, 32, 32);
+	font-size: 27px;
+	font-weight: 800;
+
 }
 
 @keyframes fadeIn {
@@ -40,26 +85,14 @@ html{
 	}
   }
 
-.menuItem{
-	padding: 0px 7px 0px 7px;
-	color: #f2f2f2;
-	text-decoration: none;
-	font-size: 20px;
-}
-
-.menuItem:hover
-{
-	color: #ffe259;
-	font-size:24px;
-	text-shadow: 0px 0px 10px white;
-}
 
 *
 {
 	font-family:verdana;
-	color: #333;
+	/* color: #333; */
 	box-sizing: border-box;
-
+	-webkit-transition-duration: 0.1s;
+	
 }
 
 body
@@ -75,9 +108,14 @@ body
 	margin: 0 auto;
 }
 
+.pic
+{
+	margin: auto;
+}
+
 .column {
 	float: left;
-	width: 50%;
+	width: 33%;
 	padding: 10px;
   }
   
@@ -85,7 +123,11 @@ body
 	margin-top: 4px;
   }
   
-  /* Clear floats after the columns */
+  .row
+  {
+	  margin: auto;
+  }
+  
   .row:after {
 	content: "";
 	display: table;
@@ -94,7 +136,7 @@ body
 
   .clip-text {
 	margin: 0 auto;
-	background: url(https://i.gifer.com/KYql.gif);
+	background: url(src/smoke.gif);
 	background-size: cover;
 	background-position: center;
 	-webkit-background-clip: text;
@@ -102,9 +144,20 @@ body
 	width: 350px;
 	height: 150px;
 	box-sizing: border-box;
-	font-size: 48px;
+	font-size: 52px;
 	font-weight: bold;
 	text-align: center;
 	line-height: 100px;
 	flex-shrink: 0;
+  }
+
+  .qr
+  {
+	  margin: 0 auto;
+	  display: block;
+  }
+
+  .fb
+  {
+	  text-align: center;
   }
