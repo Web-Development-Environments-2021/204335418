@@ -3,6 +3,7 @@
 	font-family:verdana;
 	/* color: #333; */
 	box-sizing: border-box;
+	transition-duration: 0.1s;
 	-webkit-transition-duration: 0.1s;
 	
 }
@@ -11,6 +12,7 @@ body
 {
 	animation: fadeIn 1.5s ease-in;
 	perspective: 1200px;
+	min-width: 900px;
 }
 
 #menu
@@ -48,6 +50,7 @@ body
 	background:linear-gradient(#9e29ff,#ffffff);
 	background-size: cover;
 	background-position: center;
+	background-clip: text;
 	-webkit-background-clip: text;
 	color: white;
 	/* color: white; */
@@ -85,6 +88,7 @@ html{
 	background: url(src/smoke.gif);
 	background-size: cover;
 	background-position: center;
+	background-clip: text;
 	-webkit-background-clip: border-box;
 	color: transparent;
 	height: 35px;
@@ -180,6 +184,7 @@ background: url(src/smoke.gif);
 background-size: cover;
 background-position: center;
 -webkit-background-clip: text;
+background-clip: text;
 color: transparent;
 width: 500px;
 height: 150px;
