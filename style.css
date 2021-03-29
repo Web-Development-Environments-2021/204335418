@@ -43,6 +43,8 @@ body
 .menuIcon
 {
 	height: 40px;
+	animation: spin 4.5s ease-in-out;
+
 }
 
 .menuItem:hover
@@ -237,3 +239,9 @@ textarea
 	min-height: 10%;
 	resize: both;
 }
+
+@keyframes spin {
+	0% {
+	  transform: rotateY(10turn);
+	}
+  }
