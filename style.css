@@ -280,14 +280,18 @@ textarea
 	}
   }
 
-  .spaceship
+.spaceship
   {
-	  float: left;
-	  margin-left: 150px;
-	  animation: floatingCar 2s ease-in-out infinite;
-	  transform: translatey(0px);
+	float: left;
+	margin-left: 100px;
+	animation: floatingCar 2s ease-in-out infinite;
+	transform: translatey(0px);
 
   }
+section
+{
+	justify-content: center;
+}
 
 @keyframes floatingCar {
 	0% {
