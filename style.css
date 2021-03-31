@@ -209,6 +209,11 @@ margin: auto;
     text-shadow: 4px 5px 4px #0000004f;
 	}
 
+select
+{
+	font-size: 25px;
+}
+
 .clip-text.small
 {
 	float: inline-start;
