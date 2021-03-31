@@ -201,7 +201,7 @@ margin: auto;
 	width: fit-content;
 	height: 150px;
 	box-sizing: border-box;
-	font-size: 52px;
+	font-size: 46px;
 	font-weight: bold;
 	text-align: center;
 	line-height: 100px;
@@ -283,7 +283,7 @@ textarea
 .spaceship
   {
 	float: left;
-	margin-left: 80px;
+	margin-left: 60px;
 	animation: floatingCar 2s ease-in-out infinite;
 	transform: translatey(0px);
 
