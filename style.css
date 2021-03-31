@@ -288,10 +288,10 @@ textarea
 	transform: translatey(0px);
 
   }
-section
+/* section
 {
 	justify-content: center;
-}
+} */
 
 @keyframes floatingCar {
 	0% {
