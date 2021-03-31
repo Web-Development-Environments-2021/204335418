@@ -284,7 +284,7 @@ textarea
   {
 	float: left;
 	margin-left: 60px;
-	animation: floatingCar 2s ease-in-out infinite;
+	animation: floatingCar 3.5s ease-in-out infinite;
 	transform: translatey(0px);
 
   }
