@@ -283,7 +283,7 @@ textarea
 .spaceship
   {
 	float: left;
-	margin-left: 100px;
+	margin-left: 80px;
 	animation: floatingCar 2s ease-in-out infinite;
 	transform: translatey(0px);
 
