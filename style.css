@@ -43,9 +43,15 @@ body
 .menuIcon
 {
 	height: 40px;
-	animation: spin 4.5s ease-in-out;
+	animation: spin 3.5s ease-in-out;
 
 }
+
+/* .menuIcon:hover
+{
+	animation: spin 2s ease-in-out;
+
+} */
 
 .menuItem:hover
 {
@@ -132,11 +138,14 @@ html{
 	padding: 10px;
 	box-shadow: 6px 12px 14px 0px black;
 	text-align: center;
+	border-radius: 10px;
 }
   
 .column img
 {
 	margin-top: 4px;
+	border-radius: 5px;
+
 }
 
 .column.left 
@@ -174,28 +183,43 @@ margin: auto;
 
 .row:after
 {
-content: "";
-display: table;
-clear: both;
+	content: "";
+	display: table;
+	clear: both;
 }
 
 .clip-text 
 {
-margin: 0 auto;
-background: url(src/smoke.gif);
-background-size: cover;
-background-position: center;
--webkit-background-clip: text;
-background-clip: text;
-color: transparent;
-width: 500px;
-height: 150px;
-box-sizing: border-box;
-font-size: 52px;
-font-weight: bold;
-text-align: center;
-line-height: 100px;
-flex-shrink: 0;
+	/* float: left; */
+	margin: 0 auto;
+	background: url(src/smoke.gif);
+	background-size: cover;
+	background-position: center;
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+	width: 500px;
+	height: 150px;
+	box-sizing: border-box;
+	font-size: 52px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 100px;
+	flex-shrink: 0;
+}
+
+.clip-text.small
+{
+	float: inline-start;
+	font-size: 40px;
+	width: fit-content;
+}
+
+.FreeText
+{
+	margin-left: 10%;
+	margin-right: 10%;
+	font-size: 20px;
 }
 
 .qr
@@ -213,6 +237,7 @@ flex-shrink: 0;
 {
 	color: darkslategray;
 	margin-left: 40px;
+	font-size: 140%;
 }
 
 form
@@ -226,7 +251,7 @@ form
 	border-radius: 15px;
 	color: white;
 	font-weight: 600;
-	font-size: 20px;
+	font-size: 22px;
 	line-height: 30px;
 	
 }
@@ -242,6 +267,36 @@ textarea
 
 @keyframes spin {
 	0% {
-	  transform: rotateY(10turn);
+		transform: rotateY(10turn);
+	}
+	100%{
+		transform: rotateY(0turn);
 	}
   }
+
+  .spaceship
+  {
+	  float: left;
+	  margin-left: 55px;
+	  animation: floating 3s ease-in-out infinite;
+	  transform: translatey(0px);
+
+  }
+
+@keyframes floating {
+	0% {
+		transform: translatey(0px);
+	}
+	25% {
+		transform: translateY(-20px);
+	}
+	50% {
+		transform: translatey(5px);
+	}
+	75% {
+		transform: translatey(-15px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
