@@ -198,7 +198,7 @@ margin: auto;
 	-webkit-background-clip: text;
 	background-clip: text;
 	color: transparent;
-	width: 500px;
+	width: fit-content;
 	height: 150px;
 	box-sizing: border-box;
 	font-size: 52px;
@@ -283,26 +283,52 @@ textarea
   .spaceship
   {
 	  float: left;
-	  margin-left: 55px;
-	  animation: floating 3s ease-in-out infinite;
+	  margin-left: 150px;
+	  animation: floatingCar 2s ease-in-out infinite;
 	  transform: translatey(0px);
 
   }
 
-@keyframes floating {
+@keyframes floatingCar {
+	0% {
+		transform: translatey(0px);
+		filter: drop-shadow(6px 5px 8px black);
+	}
+	25% {
+		transform: translateY(-20px) translateX(8px);
+		filter: drop-shadow(6px 14px 15px black);
+	}
+	50% {
+		transform: translatey(5px) translateX(10px);
+		filter: drop-shadow(6px 4px 10px black);
+	}
+	65% {
+		transform: translatey(-15px) translateX(5px);
+		filter: drop-shadow(6px 10px 10px black);
+	}
+	80% {
+		transform: translatey(2px) translateX(-5px);
+		filter: drop-shadow(6px 10px 8px black);
+	}
+	100% {
+		transform: translatey(0px);
+		filter: drop-shadow(6px 5px 8px black);
+	}
+}
+
+@keyframes floatingBaby {
 	0% {
 		transform: translatey(0px);
 	}
-	25% {
-		transform: translateY(-20px);
-	}
 	50% {
-		transform: translatey(5px);
-	}
-	75% {
-		transform: translatey(-15px);
+		transform: translateY(-30px);
 	}
 	100% {
 		transform: translatey(0px);
 	}
+}
+
+.baby
+{
+	animation: floatingBaby 3s ease-in-out infinite;
 }
