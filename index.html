@@ -126,15 +126,22 @@
     <section id="contact" class="section">
       <br/>
       <p class="heading">Contact Me</p>
-      <form action="mailto:odedberk@pos.bgu.ac.il" method="post" enctype="text/plain">
+      <form id="mail" action="mailto:odedberk@pos.bgu.ac.il" method="post" enctype="text/plain">
         <br/>
         Your name<br>
         <input type="text" name= "Name is"><br>
         E-mail address<br>
         <input type="text" name="If you want to reply, use this address" ><br>
         You wanted to say that...<br>
-        <textarea type="text" name="They say" rows="4" cols="40" placeholder="(You probably miss me right..?)" maxlength="500"></textarea>
+        <textarea type="text" name="They say" rows="4" cols="40" placeholder="(You probably miss me right..?)" maxlength="500"></textarea>        
         <br><br>
+        How are you feeling today? 
+        <select name ="Mood">
+          <option value="😒">😒</option>
+          <option value="😀">😀</option>
+          <option value="&#128516">&#128516</option>
+          <option value="&#128151">&#128151</option>
+        </select><br><br
         <input type="submit" value="Send">
         <input type="reset" value="Reset">
         <br/>
