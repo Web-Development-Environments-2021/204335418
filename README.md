@@ -1,5 +1,6 @@
 # First Assignment - Rick Sanchez's Website
 <img src=/src/readme.gif width="150" height="150" />
+
 ## Name
 Oded Berkovich
 ## ID
